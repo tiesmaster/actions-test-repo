@@ -1,0 +1,18 @@
+name: Continuous Integration
+
+on: push
+
+jobs:
+  test-curl-on-ubuntu:
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test if curl is available
+        run: curl
+
+  test-curl-on-ubuntu:
+
+    runs-on: windows-latest
+    steps:
+      - name: Test if curl is available
+        run: curl
