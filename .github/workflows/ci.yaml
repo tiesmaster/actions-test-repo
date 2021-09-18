@@ -8,11 +8,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Test if curl is available
-        run: curl
+        run: curl https://eu.httpbin.org/get
 
   test-curl-on-windows:
 
     runs-on: windows-latest
     steps:
       - name: Test if curl is available
-        run: curl
+        run: curl https://eu.httpbin.org/get
