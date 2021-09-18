@@ -10,7 +10,7 @@ jobs:
       - name: Test if curl is available
         run: curl
 
-  test-curl-on-ubuntu:
+  test-curl-on-windows:
 
     runs-on: windows-latest
     steps:
