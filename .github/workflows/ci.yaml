@@ -3,16 +3,9 @@ name: Continuous Integration
 on: push
 
 jobs:
-  test-curl-on-ubuntu:
-
-    runs-on: ubuntu-latest
-    steps:
-      - name: Test if curl is available
-        run: curl https://eu.httpbin.org/get
-
-  test-curl-on-windows:
+  test-msbuild-on-windows:
 
     runs-on: windows-latest
     steps:
-      - name: Test if curl is available
-        run: curl https://eu.httpbin.org/get
+      - name: Test if msbuild is available
+        run: msbuild
