@@ -31,6 +31,8 @@ jobs:
             printf %s "$s"
           }
 
-          REPO_URL=$(uriencode $GITHUB_SERVER_URL/$GITHUB_REPOSITORY)
+          REPO_URL=$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/
+          ISSUE_URL=$REPO_URL/issues/
+          README_URL=https://raw.githubusercontent.com/$GITHUB_REPOSITORY/main/README.md
 
           echo $REPO_URL |xxd
