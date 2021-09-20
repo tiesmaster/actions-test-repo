@@ -8,4 +8,5 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Test variables
-        run: echo ${{ env.GITHUB_SERVER_URL }}
+        run: echo $GITHUB_SERVER_URL
+        shell: bash
