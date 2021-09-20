@@ -8,5 +8,5 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Test variables
-        run: echo $GITHUB_SERVER_URL/$GITHUB_REPOSITORY
+        run: "echo The URL is: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY"
         shell: bash
